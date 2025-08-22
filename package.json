@@ -1,0 +1,37 @@
+{
+  "name": "whatsapp-hubspot-calling",
+  "version": "1.0.0",
+  "description": "WhatsApp Business Calling integration with HubSpot Calling Extensions SDK",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && npm test && cd ../frontend && npm test",
+    "test:integration": "cd backend && npm run test:integration",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [
+    "whatsapp",
+    "hubspot",
+    "calling",
+    "twilio",
+    "webrtc",
+    "crm",
+    "voice"
+  ],
+  "author": "Sagar Gurav",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagar-jg/whatsapp-hubspot-calling.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sagar-jg/whatsapp-hubspot-calling/issues"
+  },
+  "homepage": "https://github.com/sagar-jg/whatsapp-hubspot-calling#readme"
+}
